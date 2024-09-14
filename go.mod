@@ -1,8 +1,10 @@
 module github.com/ory/x
 
-go 1.22
+go 1.21
 
-toolchain go1.22.2
+toolchain go1.21.11
+
+replace github.com/ory/dockertest/v3 => github.com/vivshankar/ory-dockertest/v3 v3.0.1-fips
 
 require (
 	code.dny.dev/ssrf v0.2.0
@@ -13,7 +15,7 @@ require (
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/cockroachdb/cockroach-go/v2 v2.3.5
 	github.com/dgraph-io/ristretto v0.1.1
-	github.com/docker/docker v26.1.4+incompatible
+	github.com/docker/docker v27.1.1+incompatible
 	github.com/evanphx/json-patch/v5 v5.6.0
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.6.0
@@ -122,7 +124,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0 // indirect
 	github.com/distribution/reference v0.6.0 // indirect
-	github.com/docker/cli v26.1.4+incompatible // indirect
+	github.com/docker/cli v27.1.2+incompatible // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
@@ -137,6 +139,7 @@ require (
 	github.com/go-openapi/strfmt v0.21.3 // indirect
 	github.com/go-openapi/swag v0.22.3 // indirect
 	github.com/go-pdf/fpdf v0.6.0 // indirect
+	github.com/go-viper/mapstructure/v2 v2.1.0 // indirect
 	github.com/gobuffalo/envy v1.10.2 // indirect
 	github.com/gobuffalo/flect v0.3.0 // indirect
 	github.com/gobuffalo/github_flavored_markdown v1.1.3 // indirect
