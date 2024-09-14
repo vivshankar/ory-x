@@ -65,7 +65,7 @@ func NewProcessPool(size int) Pool {
 	if err != nil {
 		panic(err) // this should never happen, see implementation of puddle.NewPool
 	}
-	for range size {
+	for i := 1; i <= size; i++ {
 		// warm pool
 		go pud.CreateResource(context.Background())
 	}
