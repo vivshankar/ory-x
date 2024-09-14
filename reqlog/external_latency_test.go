@@ -24,7 +24,7 @@ func TestExternalLatencyMiddleware(t *testing.T) {
 			var wg sync.WaitGroup
 
 			wg.Add(3)
-			for i := range 3 {
+			for i := 1; i <= 3; i++ {
 				ctx := r.Context()
 				if i%3 == 0 {
 					ctx = WithDisableExternalLatencyMeasurement(ctx)
